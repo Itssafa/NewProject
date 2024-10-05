@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page créative</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .section {
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .section h1, .section h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #083d04;
+            border: none;
+            color: #f5be51;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #e09d24;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content {
+            padding: 100px 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+        .content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            background-color: #f9f9f9;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .white-text {
+            color: #fff;
+        }
+        .black-background {
+            background-color: rgba(0, 0, 0, 0); /* Fond noir semi-transparent */
+            color: #f5be51; 
+            padding: 10px 20px; /* Ajouter un peu de padding pour l'esthétique */
+}
+    </style>
+</head>
+<body>
+<section class="section" style="background-image: url('C:\Users\user\OneDrive\Bureau\Gestion de projet symfony\skeleton\public\pictures\900.jpeg');">
+        <div class="container">
+            <h3 class="black-background">My Project Vous facilite la vie</h3>
+            <h1 class="black-background">CREER VOTRE PROJET EN QUELQUES CLIQUES</h1>
+            <a href="{{path('app_project_new')}}" class="button">Ajouter un Projet</a>
+            {# <img src="/pictures/427699601-7832478163447140-3340046369011292797-n-65d7a42b83d14.jpg" alt="Placeholder image"> #}
+        </div>
+    </section>
+   
+    <section class="section" style="background-image: url('/assets/img/villa.jpg');">
+        <div class="container">
+            <h3 class="black-background">VOS CLIENTS SONT SUR TUNIWORLD</h3>
+            <h1 class="black-background">POURQUOI NE L'ETES-VOUS PAS ?</h1>
+            <a href="{{path('app_project_new')}}" class="button">Ajouter votre Hébergement</a>
+        </div>
+    </section>
+<section class="section" style="background-image: url('/assets/img/art.webp');">
+        <div class="container">
+            <h3 class="black-background">VOS CLIENTS SONT SUR TUNIWORLD</h3>
+            <h1 class="black-background">POURQUOI NE L'ETES-VOUS PAS ?</h1>
+            <a href="{{path('app_project_new')}}" class="button">Ajouter votre Produit</a>
+        </div>
+    </section>
+    <section class="section image-container black-background">
+        <div class="container">
+            <h2 class="white-text">Troisième section avec image</h2>
+            <p class="white-text">Vous pouvez intégrer une image dans cette section pour mettre en valeur votre contenu.</p>
+            <img src="https://via.placeholder.com/800x500" alt="Placeholder image">
+        </div>
+    </section>
+</body>
+</html>
